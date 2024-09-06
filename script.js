@@ -1,7 +1,7 @@
 function actualizarHora() {
     const horaActual = new Date();
     const hora = horaActual.toLocaleTimeString();
-    document.getElementById('hora').innerHTML = hora;
+    document.getElementById('hora').textContent = hora;
 }
 setInterval(actualizarHora, 1000);
 actualizarHora();
